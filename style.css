@@ -3,11 +3,17 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'helvetica';
+    letter-spacing: 50px;
 }
 
 nav {
     text-align: center;
     background-color: lightgrey;
+}
+
+nav ul {
+    margin: 0;
 }
 
 nav ul li {
@@ -20,15 +26,34 @@ nav ul li a {
     color: black;
 }
 
+nav ul li a:active {
+    color: white;
+}
+
 h1,
 h2 {
     text-align: center;
 }
 
+h1 {
+    padding-top: 40px;
+}
+
+footer {
+    background-color: cadetblue;
+    display: block;
+    padding: 20px;
+
+}
+
+#active {
+    color: white;
+}
+
 
 /*//////////////////// MOBILE VERSION /////////////////*/
 
-@media only screen and (max-width: 41em) {
+@media only screen and (max-width: 60em) {
     nav ul li {
         display: block;
         padding: 15px;
@@ -56,4 +81,43 @@ h2 {
 
 /*//////////////////// DESKTOP VERSION ///////////////*/
 
-@media only screen and (min-width:70em) {}
+@media only screen and (min-width:60em) {
+    input {
+        display: none;
+    }
+    label {
+        display: none;
+    }
+    /*///////////////////// FRONTPAGE ///////////////////*/
+    #objectivesFrontpageBox {
+        margin: 50px;
+        height: 550px;
+        position: relative;
+    }
+    .objectivesFrontpage {
+        position: absolute;
+        height: auto;
+        padding: 20px;
+    }
+    #skillsFrontpage {
+        background-color: lightgray;
+        width: 450px;
+    }
+    #knowledgeFrontpage {
+         background-color: grey;
+        width: 300px;
+        top: 0px;
+        left: 800px;
+        z-index: 2;
+    }
+    #competenciesFrontpage {
+        background-color: lightblue;
+        width: 850px;
+        top: 250px;
+        left: 300px;
+    }
+
+}
+
+
+
