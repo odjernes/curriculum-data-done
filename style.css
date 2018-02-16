@@ -1,0 +1,59 @@
+/*///////////////// FIRST PART OF PAGE //////////////////*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+    background-color: lightgrey;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+/*//////////////////// MOBILE VERSION /////////////////*/
+
+@media only screen and (max-width: 41em) {
+    nav ul li {
+        display: block;
+        padding: 15px;
+    }
+    nav {
+        text-align: center;
+        margin-left: -5%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    input {
+        display: none;
+    }
+    input:checked~nav {
+        max-height: 2000px;
+    }
+    label {
+        cursor: pointer;
+        padding: 10px;
+        display: block;
+        background-color: lightgrey;
+    }
+}
+
+
+/*//////////////////// DESKTOP VERSION ///////////////*/
+
+@media only screen and (min-width:70em) {}
