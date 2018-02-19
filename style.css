@@ -82,13 +82,60 @@ footer {
         display: block;
         background-color: lightgrey;
     }
+
+    /*/////////////TRANSFER AND EXCHANGE////////////////*/
+
+    #transferExchangeContainer {
+        margin: 30px;
+    }
+
+    #transferContainer {
+        background-color: grey;
+        padding: 30px;
+    }
+
+    #exchangeContainer {
+        background-color: lightblue;
+        padding: 30px;
+    }
+
+    .openText{
+       display: block;
+    }
+    .closeText{
+        display: none;
+    }
+
+    /*/////////////GENERAL INFORMATIONS//////////////*/
+
+    #informationsContainer {
+        margin: 30px;
+    }
+    .informations {
+        padding: 30px;
+    }
+
+    #info1, #info3{
+        background-color: lightblue;
+    }
+    #info2, #info4{
+        background-color: lightgrey;
+    }
+
+
 }
+
+
+
+
+
 
 
 /*//////////////////// DESKTOP VERSION ///////////////*/
 
 @media only screen and (min-width:60em) {
 
+    /*/////////////TEMPLATE AND LEFT NAV///////////*/
     .main_box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -118,33 +165,6 @@ footer {
         margin-top: 15px;
         margin-left:100px;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     input {
         display: none;
@@ -204,13 +224,13 @@ footer {
     }
 
     .transferExchange {
-        height: 500px;
+        height: auto;
         width: 500px;
         display: inline-block;
         padding: 50px;
     }
 
-    span {
+    #transferText {
         position: absolute;
         bottom: 40px;
         padding-right: 50px;
@@ -219,9 +239,10 @@ footer {
     #transferContainer {
         position: absolute;
         background-color: cadetblue;
+        height: 597px;
     }
 
-    #studyabroadContainer{
+    #exchangeContainer{
         background-color: grey;
     }
 
